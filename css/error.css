@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.error-404 h1 {
+  font-size: 175px;
+  letter-spacing: 15px;
+  font-weight: 1000;
+  background: linear-gradient(
+    to right,
+    #4C7BD5 20%,
+    #00affa 30%,
+    #a3c3ff 70%,
+    #a6e1fa 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.error-404 h2 {
+  font-size: 30.5px;
+  font-weight: 900;
+  color: #4d4d4d;
+  margin-bottom: 30px;
+}
+
+.error-404 p {
+  font-size: 20px;
+  color: #4d4d4d;
+  text-align: center;
+  max-width: 50ch;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.error-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.error-btn button {
+  border: 1px #4C7BD5 solid;
+  background: none;
+  color: #4C7BD5;
+  padding: 12px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.error-btn button:hover {
+  background-color: #4C7BD5;
+  color: white;
+}
+
+@media (max-width: 700px) {
+
+  .error h1 {
+    font-size: 150px;
+  }
+
+  .error h2 {
+    font-size: 25px;
+  }
+
+  .error-404 p {
+    font-size: 16px;
+    max-width: 40ch;
+  }
+
+  .error-btn button {
+    font-size: 11.5px;
+    padding: 10px 18px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .error h1 {
+    font-size: 140px;
+  }
+
+  .error h2 {
+    font-size: 22px;
+  }
+
+  .error-404 p {
+    font-size: 14px;
+    max-width: 38ch;
+  }
+
+  .error-btn button {
+    font-size: 10.5px;
+    padding: 9px 17px;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .error h1 {
+    font-size: 135px;
+  }
+
+  .error h2 {
+    font-size: 22px;
+  }
+
+  .error-404 p {
+    font-size: 14px;
+    max-width: 30ch;
+  }
+
+  .error-btn {
+    gap: 12px;
+  }
+
+  .error-btn button {
+    font-size: 10.5px;
+    padding: 7.5px 15px;
+  }
+
+}

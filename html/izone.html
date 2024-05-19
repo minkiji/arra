@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/izone.css">
+    <title>Arra</title>
+    <link rel="icon" href="/img/yujin1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <main>
+      <nav>
+        <div class="left-navbar">
+          <p><a href="index.html"><i class="fa fa-github-alt" style="margin-right: 10px;"></i>arra.dev</a></p>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="/html/izone.html">izone</a></li>
+            <li><a href="/html/about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="members-about">
+        <div class="cointainer">
+          <div id="eunbi-pantone" class="members-list">
+            <img src="/photos/members/Eunbi_One-reeler_Scene_1.png">
+            <h1>Kwon Eun-bi</h1>
+            <p>Soloist<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="sakura-pantone" class="members-list">
+            <img src="/photos/members/Sakura_One-reeler_Scene_1.png">
+            <h1>Miyawaki Sakura</h1>
+            <p>Current Group - LE SSERAFIM<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="hyewon-pantone" class="members-list">
+            <img src="/photos/members/Hyewon_One-reeler_Scene_1.png">
+            <h1>Kang Hye-won</h1>
+            <p>Actress<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="yena-pantone" class="members-list">
+            <img id="yena1" src="/photos/members/Yena_One-reeler_Scene_1.png">
+            <h1>Choi Ye-na</h1>
+            <p>Actress / Soloist<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="chaeyeon-pantone" class="members-list">
+            <img src="/photos/members/Chaeyeon_One-reeler_Scene_1.png">
+            <h1>Lee Chae-yeon</h1>
+            <p>Soloist<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="chaewon-pantone" class="members-list">
+            <img src="/photos/members/Chaewon_One-reeler_Scene_1.png">
+            <h1>Kim Chae-won</h1>
+            <p>Current Group - LE SSERAFIM<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="minju-pantone" class="members-list">
+            <img src="/photos/members/Minju_One-reeler_Scene_1.png">
+            <h1>Kim Min-ju</h1>
+            <p>Actress<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="nako-pantone" class="members-list">
+            <img src="/photos/members/Nako_One-reeler_Scene_1.png">
+            <h1>Yabuki Nako</h1>
+            <p>On Hiatus<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="hitomi-pantone" class="members-list">
+            <img id="hitomi1" src="/photos/members/Hitomi_One-reeler_Scene_1.png">
+            <h1>Honda Hitomi</h1>
+            <p>On Hiatus<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="yuri-pantone" class="members-list">
+            <img id="yuri1" src="/photos/members/Yuri_One-reeler_Scene_1.png">
+            <h1>Jo Yu-ri</h1>
+            <p>Actress / Soloist<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="yujin-pantone" class="members-list">
+            <img src="/photos/members/Yujin_One-reeler_Scene_1.png">
+            <h1>An Yu-jin</h1>
+            <p>Current Group - IVE<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+          <div id="wonyoung-pantone" class="members-list">
+            <img src="/photos/members/Wonyoung_One-reeler_Scene_1.png">
+            <h1>Jang Won-young</h1>
+            <p>Current Group - IVE<br>FORMER GROUP IZ*ONE</br></p>
+            <a href="/html/error.html"><button class="btn-about">About</button></a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+<!--------Javascript--------->    
+    
+    <script>
+      const parent = document.querySelector(".cointainer");
+    
+    document.querySelectorAll(".members-list").forEach((container) => {
+      container.addEventListener("mouseover", () => {
+        parent.classList.add("children-focused");
+      });
+    
+      container.addEventListener("mouseleave", () => {
+        parent.classList.remove("children-focused");
+      });
+    });
+    
+    </script>
+
+  </body>
+</html>
