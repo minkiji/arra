@@ -110,7 +110,6 @@ nav {
 }
 
 .btn-about {
-  color: white;
   background-color: #9FC1E4;
   border: none;
   padding-top: 10px;
@@ -122,6 +121,11 @@ nav {
   margin-top: auto;
   cursor: pointer;
   transition: 0.6s;
+}
+
+.btn-about a {
+  color: white;
+  text-decoration: none;
 }
 
 .btn-about:hover {
